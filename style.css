@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+/* ------------------------Global CSS--------------- */
+body{
+    font-family: 'Mulish', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    /* min-width: 992px; */
+    /* box-sizing: border-box; */
+}
+h1,h2,h3{
+    font-weight: 800;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+}
+.sub-body{
+    width: 90%;
+    margin: 0 auto;
+}
+.btn-primary{
+    padding: 14px 34px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: white;
+    border:0;
+}
+img{
+    width: 100%;
+}
+/* ----------------------Header---------------------- */
+header{
+    margin-bottom: 100px;
+}
+/* --------------Nav---------------- */
+.nav-file{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.nav-title img{
+    width: 48px;
+    height: 56.008px;
+}
+.nav-options ul{
+    display: flex;
+}
+.nav-options ul li{
+    list-style: none;
+    margin-right: 1.5rem;
+}
+/* --------------Banner------------ */
+.banner-container{
+    background-image: url('./Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+}
+.banner{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 0px 190px;
+}
+
+.banner-title h1{
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+.banner-title p{
+    margin-bottom: 40px;
+}
+.banner-select{
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+}
+.banner-select ul{
+    display: flex;
+    padding: 10px;
+    margin-left: 1.6rem;
+}
+.banner-select ul li{
+    list-style: none;
+}
+.banner-select ul li input,select{
+    margin-right: 15px;
+    width: 10rem;
+    height: 2.6rem;
+    border: 0px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.70);
+    padding-left: 1rem;
+}
+/* ----------------------------Main--------------------------------- */
+main{
+    margin-bottom: 100px;
+}
+/* ---------------Popular Tours------------------ */
+.popular{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.popular-content{
+    width: 50%;
+}
+.popular-image{
+    width: 50%;
+}
+/* ---------------Destination------------------- */
+.destination{
+    margin-bottom: 50px;
+}
+.destination-content{
+    text-align: center;
+}
+.destination-gallery img{
+    width: 100%;
+    height: 100%;
+}
+.destination-gallery{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px; 
+    /* place-items: center; */
+}
+.box-1{
+    grid-column: 1/span 6;
+    grid-row: 1/span 1;
+}
+.box-2{
+    grid-column: 7/span 6;
+    grid-row: 1/span 1;
+}
+.box-3{
+    grid-column: 1/span 3;
+    grid-row: 2/span 1;
+}
+.box-4{
+    grid-column: 4/span 6;
+    grid-row: 2/span 1;
+}
+.box-5{
+    grid-column: 10/span 3;
+    grid-row: 2/span 1;
+}
+.box-6{
+    grid-column: 1/span 4;
+    grid-row: 3/span 1;
+}
+.box-7{
+    grid-column: 5/span 8;
+    grid-row: 3/span 1;
+}
+.h3{
+    position: relative;
+    top: 55%;
+    left: 40%;
+}
+/* --------------Why-Choose------------- */
+.why-choose-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card{
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.why-choose-card{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+.card1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    grid-column: 1/span 6;
+    grid-row: 1/span 1;
+}
+.card2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    grid-column: 7/span 6;
+    grid-row: 1/span 1;
+}
+.card3{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    grid-column: 4/span 6;
+    grid-row:2/span 1;
+}
+/* -------------Video----------- */
+.video-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.vid-content{
+    width: 50%;
+}
+.video{
+    width: 50%;
+}
+iframe{
+    border-radius: 16px;
+}
+
+
+
+
+
+
+/* ----------------Media Query------------- */
+@media screen and (max-width:600px) {
+    header,main{
+        margin-bottom: -120px;
+    }
+    .nav-file,.banner-select ul,.popular,.video-sec{
+        flex-direction: column;
+    }
+    .banner-select ul li input,select,button{
+        margin-bottom: 15px;
+        width: 100%;
+        margin-left: -20px;
+    }
+    .banner-select ul li select,button{
+        width: 105%;
+    }
+    .banner-container{
+        background-size: 100% 85%;
+        object-fit: cover;
+        display: block;
+    }
+    .banner{
+        width: 90%;
+        margin:0px auto;
+    }
+    .popular-content{
+        width: 100%;
+    }
+    .popular-image{
+        width: 100%;
+    }
+    .popular-content>button,.vid-content>button{
+        margin-left: 2.5px;
+        width: 50%;
+    }
+
+
+
+    .destination-gallery{
+        display: grid;
+        grid-template-rows: repeat(7,1fr);
+    }
+    .box-1{
+        grid-column: 1/span 12;
+        grid-row: 1/span 1;
+    }
+    .box-2{
+        grid-column: 1/span 12;
+        grid-row: 2/span 1;
+    }
+    .box-3{
+        grid-column: 1/span 12;
+        grid-row: 3/span 1;
+    }
+    .box-4{
+        grid-column: 1/span 12;
+        grid-row: 4/span 1;
+    }
+    .box-5{
+        grid-column: 1/span 12;
+        grid-row: 5/span 1;
+    }
+    .box-6{
+        grid-column: 1/span 12;
+        grid-row: 6/span 1;
+    }
+    .box-7{
+        grid-column: 1/span 12;
+        grid-row: 7/span 1;
+    }
+
+
+
+    .why-choose{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .card1{
+        grid-column: 1/span 12;
+        grid-row: 1/span 1;
+    }
+    .card2{
+        grid-column: 1/span 12;
+        grid-row: 2/span 1;
+    }
+    .card3{
+        grid-column: 1/span 12;
+        grid-row: 3/span 1;
+    }
+
+
+
+    .vid-content{
+        width: 100%;
+    }
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+
+}
