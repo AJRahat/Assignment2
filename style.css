@@ -89,6 +89,8 @@ header{
     margin-bottom: 40px;
 }
 .banner-select{
+    width: 90%;
+    margin: 0 auto;
     background: rgba(255, 255, 255, 0.30);
     border-radius: 8px;
 }
@@ -472,17 +474,20 @@ hr{
         grid-row: 3/span 1;
     }
 
+    .cart-detail{
+        width: 150%;
+    }
     .cart1{
         top:50%;
-        left: 1%;
+        left:1%;
     }
     .cart2{
         top:50%;
-        left: 1%;
+        left:1%;
     }
     .cart3{
         top:50%;
-        left: 1%;
+        left:1%;
     }
     .deal{
         display: none;
