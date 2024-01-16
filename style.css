@@ -269,30 +269,36 @@ main{
 .cart-detail{
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     border-radius:10px;
     margin: 10px;
 }
 .cart1{
+    width: 50%;
     position: relative;
     top:50%;
     transform: translateY(-50%);
     left: 45%;
 }
 .cart2{
+    width: 50%;
     position: relative;
     top:50%;
     transform: translateY(-50%);
     left: 1%;
 }
 .cart3{
+    width: 50%;
     position: relative;
     top:50%;
     transform: translateY(-50%);
     left: 45%;
 }
-
+.deal{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
 /* -------------Video----------- */
 .video-sec{
     display: flex;
@@ -477,6 +483,9 @@ hr{
     .cart3{
         top:50%;
         left: 1%;
+    }
+    .deal{
+        display: none;
     }
 
 
