@@ -4,17 +4,21 @@ body{
     font-family: 'Mulish', sans-serif;
     padding: 0px;
     margin: 0px;
-    /* min-width: 992px; */
-    /* box-sizing: border-box; */
 }
 h1,h2,h3{
     font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 h2{
     font-size: 2.5rem;
 }
 h3{
     font-size: 1.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    color: #FF5400;
 }
 p{
     font-size: 1rem;
@@ -37,13 +41,14 @@ img{
 }
 /* ----------------------Header---------------------- */
 header{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 /* --------------Nav---------------- */
 .nav-file{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0px 20px;
 }
 .nav-title{
     display: flex;
@@ -106,7 +111,7 @@ header{
 }
 /* ----------------------------Main--------------------------------- */
 main{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 /* ---------------Popular Tours------------------ */
 .popular{
@@ -122,59 +127,75 @@ main{
 }
 /* ---------------Destination------------------- */
 .destination{
-    margin-bottom: 50px;
+    margin-bottom: -300px;
 }
 .destination-content{
     text-align: center;
-}
-.destination-gallery img{
-    width: 100%;
-    height: 100%;
+    margin-bottom: 20px;
 }
 .destination-gallery{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(4,1fr);
-    gap: 20px; 
-    /* place-items: center; */
+    grid-template-rows: repeat(12,100px);
+    gap: 10px; 
+}
+.destination-gallery h3{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.box{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50%;
+    border-radius: 10px;
+}
+.box{
+    color: white;
+    text-align: center;
 }
 .box-1{
+    background-image: url('./Images/Rectangle 5.png');
     grid-column: 1/span 6;
-    grid-row: 1/span 1;
+    grid-row: 1/span 3;
 }
 .box-2{
+    background-image: url('./Images/Rectangle 8.png');
     grid-column: 7/span 6;
-    grid-row: 1/span 1;
+    grid-row: 1/span 3;
 }
 .box-3{
+    background-image: url('./Images/Rectangle 6.png');
     grid-column: 1/span 3;
-    grid-row: 2/span 1;
+    grid-row:4/span 3;
 }
 .box-4{
+    background-image: url('./Images/Rectangle 7.png');
     grid-column: 4/span 6;
-    grid-row: 2/span 1;
+    grid-row: 4/span 3;
 }
 .box-5{
+    background-image: url('./Images/Rectangle 9.png');
     grid-column: 10/span 3;
-    grid-row: 2/span 1;
+    grid-row: 4/span 3;
 }
 .box-6{
+    background-image: url('./Images/Rectangle 11.png');
     grid-column: 1/span 4;
-    grid-row: 3/span 1;
+    grid-row: 7/span 3;
 }
 .box-7{
+    background-image: url('./Images/Rectangle 10.png');
     grid-column: 5/span 8;
-    grid-row: 3/span 1;
-}
-.h3{
-    position: relative;
-    top: 55%;
-    left: 40%;
+    grid-row: 7/span 3;
 }
 /* --------------Why-Choose------------- */
+.why-choose{
+    margin-bottom: -100px;
+}
 .why-choose-title{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.5rem;
 }
 .card{
     padding: 20px;
@@ -205,13 +226,80 @@ main{
     grid-column: 4/span 6;
     grid-row:2/span 1;
 }
+/* ---------------------Deals & Discounts------------------- */
+.discount{
+    margin-bottom: 50px;
+}
+.discount-title{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.package{
+    margin-bottom: 10px;
+}
+.first{
+    background-image: url('./Images/Group\ 39.png');
+    background-repeat:round;
+    height: 500px;
+}
+.second{
+    background-image: url('./Images/Group\ 40.png');
+    background-repeat:round;
+    height: 500px;
+}
+.third{
+    background-image: url('./Images/Group\ 39.png');
+    background-repeat:round;
+    height: 500px;
+}
+
+.cart-detail ul li{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.cart-detail ul li i{
+    margin-right: 5px;
+}
+.cart-detail ul{
+    display: flex;
+    margin-left: -40px;
+}
+.cart-detail{
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    width: 50%;
+    padding: 1rem;
+    border-radius:10px;
+    margin: 10px;
+}
+.cart1{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    left: 45%;
+}
+.cart2{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    left: 1%;
+}
+.cart3{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    left: 45%;
+}
+
 /* -------------Video----------- */
 .video-sec{
     display: flex;
     justify-content: space-between;
 }
 .vid-content{
-    width: 50%;
+    width: 40%;
 }
 .video{
     width: 50%;
@@ -219,8 +307,74 @@ main{
 iframe{
     border-radius: 16px;
 }
+/* -------------------Newsletter-------------- */
+.newsletter{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter-subscribe{
+    width: 30%;
+    border: 1px solid #FF5400;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 6.5rem;
+}
+.newsletter-subscribe-title{
+    width: 80%;
+}
+.newsletter-photo{
+    width: 65%;
+}
+.signup{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.signup input{
+    padding: 15px;
+    background-color: lightgray;
+    color: rgba(19, 19, 24, 0.70);
+    border: 0;
+    border-radius: 5px;
+}
+.offer{
+    background-color: #FF5400;
+    color: white;
+    width: 30%;
+    padding:5px 0px 15px;
+    border-radius: 10px;
+    text-align: center;
+    transform: rotate(-25deg) translate(39.5rem,7.5rem);
+}
 
-
+/* -------------------------------Footer------------------ */
+footer{
+    margin-top: -100px;
+    background: rgba(19, 19, 24, 0.192);
+}
+.footer{
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 100px;
+}
+.footer-title{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.footer-title img{
+    width: 48px;
+    height: 56.008px;
+}
+.footer-logo i{
+    margin-right: 10px;
+}
+hr{
+    margin: 25px 0px;
+}
 
 
 
@@ -230,7 +384,7 @@ iframe{
     header,main{
         margin-bottom: -120px;
     }
-    .nav-file,.banner-select ul,.popular,.video-sec{
+    .nav-file,.banner-select ul,.popular,.video-sec,.newsletter{
         flex-direction: column;
     }
     .banner-select ul li input,select,button{
@@ -250,10 +404,7 @@ iframe{
         width: 90%;
         margin:0px auto;
     }
-    .popular-content{
-        width: 100%;
-    }
-    .popular-image{
+    .popular-content,.popular-image,.discount-title{
         width: 100%;
     }
     .popular-content>button,.vid-content>button{
@@ -265,7 +416,7 @@ iframe{
 
     .destination-gallery{
         display: grid;
-        grid-template-rows: repeat(7,1fr);
+        grid-template-rows: repeat(7,100px);
     }
     .box-1{
         grid-column: 1/span 12;
@@ -299,7 +450,7 @@ iframe{
 
 
     .why-choose{
-        margin-top: 100px;
+        margin-top: 350px;
         margin-bottom: 50px;
     }
     .card1{
@@ -315,6 +466,18 @@ iframe{
         grid-row: 3/span 1;
     }
 
+    .cart1{
+        top:50%;
+        left: 1%;
+    }
+    .cart2{
+        top:50%;
+        left: 1%;
+    }
+    .cart3{
+        top:50%;
+        left: 1%;
+    }
 
 
     .vid-content{
@@ -325,4 +488,31 @@ iframe{
         height: 100%;
     }
 
+    .newsletter-photo{
+        width: 100%;
+        margin-top: -5rem;
+    }
+    .newsletter-subscribe{
+        width: 85%;
+    }
+    .newsletter-subscribe button,.cart-detail button{
+        margin-left: 0px;
+    }
+    .offer{
+        width: 50%;
+        transform:rotate(-25deg) translate(15rem,-3rem);
+    }
+
+
+
+    footer{
+        margin-top: 2rem;
+    }
+    .footer-title{
+        gap: 10px;
+    }
+    .footer-logo i{
+        margin-right: 20px;
+        margin-left: 10px;
+    }
 }
